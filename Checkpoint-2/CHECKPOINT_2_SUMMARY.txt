@@ -1,0 +1,9 @@
+Checkpoint 2 – Work Summary
+
+I built a repeatable Python data pipeline that loads the three supplied datasets, standardizes data types, joins transaction data with customer and product reference data, calculates transaction-level revenue metrics, and performs basic data-quality validation.
+
+Baseline metrics were calculated for transaction count, unique customers, units sold, gross sales, discount amount, net sales before returns, realized sales after returns, return rate, average transaction value, and data date range. Channel-level baseline metrics were also generated.
+
+The analysis is structured for version control using Git/GitHub. The repository contains the Python pipeline, SQL baseline query, requirements file, README, data-quality report, and baseline output files.
+
+A key project limitation remains: the supplied datasets do not contain the seven healthcare patient-funnel stages required by the project brief. Therefore, true patient funnel conversion/drop-off and funnel-based revenue-lift metrics require the missing funnel-stage data or stakeholder-approved mapping.

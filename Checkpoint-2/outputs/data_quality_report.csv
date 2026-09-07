@@ -1,0 +1,12 @@
+check,value,interpretation
+sales_rows,1000,Expected 1000 rows in supplied dataset
+customer_rows,200,Expected 200 rows in supplied dataset
+product_rows,50,Expected 50 rows in supplied dataset
+sales_missing_values,0,Should be 0
+customer_missing_values,0,Should be 0
+product_missing_values,0,Should be 0
+sales_duplicate_rows,0,Should be 0
+customer_duplicate_rows,0,Should be 0
+product_duplicate_rows,0,Should be 0
+sales_to_customer_unmatched,0,Should be 0
+sales_to_product_unmatched,0,Should be 0
