@@ -1,0 +1,99 @@
+# Data Contract - Week 2 Day 6
+
+data_contract:
+  name: sales_data_contract
+  version: "1.0"
+  description: Contract for the sales dataset used by the BI dashboard
+
+producer:
+  name: Hema
+  role: Data Analyst Intern
+
+consumer:
+  name: BI Dashboard
+  purpose: Sales analysis and business reporting
+
+dataset:
+  name: sales_data
+  format: CSV
+  source: Week 01/Day 5/sales_cleaned.csv
+  refresh_frequency: Daily
+
+schema:
+  columns:
+    - name: sale_id
+      data_type: integer
+      nullable: false
+      unique: true
+      description: Unique identifier for each sale
+
+    - name: customer_name
+      data_type: string
+      nullable: false
+      pii: true
+      description: Customer name
+
+    - name: product
+      data_type: string
+      nullable: false
+      pii: false
+      description: Product purchased
+
+    - name: category
+      data_type: string
+      nullable: false
+      allowed_values:
+        - Electronics
+        - Furniture
+        - Clothing
+        - Grocery
+      pii: false
+      description: Product category
+
+    - name: quantity
+      data_type: integer
+      nullable: false
+      minimum: 1
+      description: Number of units purchased
+
+    - name: amount
+      data_type: decimal
+      nullable: false
+      minimum: 0
+      description: Sale transaction amount
+
+    - name: city
+      data_type: string
+      nullable: false
+      pii: false
+      description: Customer city
+
+    - name: payment_method
+      data_type: string
+      nullable: false
+      allowed_values:
+        - UPI
+        - Credit Card
+        - Debit Card
+        - Cash
+        - Unknown
+      description: Payment method used for the transaction
+
+quality_rules:
+  - sale_id must be unique
+  - required fields must not contain null values
+  - amount must be greater than zero
+  - quantity must be greater than zero
+  - category must contain an approved value
+  - payment_method must contain an approved value
+
+privacy:
+  pii_columns:
+    - customer_name
+
+  protection_strategy:
+    customer_name:
+      classification: Direct PII
+      method: Tokenisation
+      access: Restricted
+      dashboard_display: Masked
