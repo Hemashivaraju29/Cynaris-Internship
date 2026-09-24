@@ -1,0 +1,6 @@
+Measure,Value
+Total Transactions,1000.0
+P(A) - Return,0.097
+P(B) - Website,0.249
+P(A and B) - Return and Website,0.028
+P(A given B) - Return given Website,0.11244979919678715
