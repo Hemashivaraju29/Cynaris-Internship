@@ -75,3 +75,7 @@ SweetViz is recommended for business stakeholders because it presents dataset st
 - `sweetviz_report.html`
 - `AutoViz_Report/`
 - `README.md`
+
+## Progress Note
+
+Week 5 Day 2 completed successfully. AutoViz and SweetViz reports were generated from the Indian Districts Census 2011 dataset. The generated reports were reviewed, key visual insights were documented, and both tools were compared for exploratory data analysis and business stakeholder reporting.
