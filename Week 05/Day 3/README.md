@@ -69,3 +69,7 @@ The benchmark was performed locally using the same 100,000-row CSV dataset and t
 ## Learning Outcome
 
 This task provided practical experience in using SQL with DuckDB, DataFrame operations with Pandas and Polars, and benchmarking different data-processing approaches on the same dataset.
+
+## Evidence
+
+The benchmark execution output is stored in `benchmark_results.txt`. It contains the execution times and results for all five analytical operations performed with Pandas, DuckDB, and Polars.
