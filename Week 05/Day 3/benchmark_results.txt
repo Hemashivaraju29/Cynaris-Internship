@@ -1,0 +1,99 @@
+WEEK 5 DAY 3 - PANDAS VS DUCKDB VS POLARS
+============================================================
+
+Dataset: data_100k.csv
+Rows: 100,000
+Columns: 8
+
+BENCHMARK TIMES
+------------------------------------------------------------
+Pandas :  0.171271 seconds
+DuckDB : 0.539863 seconds
+Polars :  0.029665 seconds
+
+QUERY 1 - ROW COUNT
+------------------------------------------------------------
+Pandas :  100000
+DuckDB : 100000
+Polars :  100000
+
+QUERY 2 - TOTAL SALES AMOUNT
+------------------------------------------------------------
+Pandas :  5012979160.12
+DuckDB : 5012979160.12
+Polars :  5012979160.12
+
+QUERY 3 - AVERAGE SALES AMOUNT
+------------------------------------------------------------
+Pandas :  50129.79
+DuckDB : 50129.79
+Polars :  50129.79
+
+QUERY 4 - SALES BY CATEGORY
+------------------------------------------------------------
+Pandas:
+category
+Electronics    1.673988e+09
+Computers      1.671926e+09
+Accessories    1.667066e+09
+Name: amount, dtype: float64
+
+DuckDB:
+      category   total_sales
+0  Electronics  1.673988e+09
+1    Computers  1.671926e+09
+2  Accessories  1.667066e+09
+
+Polars:
+shape: (3, 2)
+┌─────────────┬─────────────┐
+│ category    ┆ total_sales │
+│ ---         ┆ ---         │
+│ str         ┆ f64         │
+╞═════════════╪═════════════╡
+│ Electronics ┆ 1.6740e9    │
+│ Computers   ┆ 1.6719e9    │
+│ Accessories ┆ 1.6671e9    │
+└─────────────┴─────────────┘
+
+QUERY 5 - SALES BY CITY
+------------------------------------------------------------
+Pandas:
+           transactions   total_sales
+city                                 
+Hubballi          12494  6.355866e+08
+Mumbai            12459  6.277951e+08
+Bengaluru         12483  6.277928e+08
+Delhi             12621  6.273787e+08
+Hyderabad         12605  6.257523e+08
+Chennai           12432  6.236492e+08
+Mysuru            12517  6.226865e+08
+Mangaluru         12389  6.223379e+08
+
+DuckDB:
+        city  transactions   total_sales
+0   Hubballi         12494  6.355866e+08
+1     Mumbai         12459  6.277951e+08
+2  Bengaluru         12483  6.277928e+08
+3      Delhi         12621  6.273787e+08
+4  Hyderabad         12605  6.257523e+08
+5    Chennai         12432  6.236492e+08
+6     Mysuru         12517  6.226865e+08
+7  Mangaluru         12389  6.223379e+08
+
+Polars:
+shape: (8, 3)
+┌───────────┬──────────────┬─────────────┐
+│ city      ┆ transactions ┆ total_sales │
+│ ---       ┆ ---          ┆ ---         │
+│ str       ┆ u32          ┆ f64         │
+╞═══════════╪══════════════╪═════════════╡
+│ Hubballi  ┆ 12494        ┆ 6.3559e8    │
+│ Mumbai    ┆ 12459        ┆ 6.2780e8    │
+│ Bengaluru ┆ 12483        ┆ 6.2779e8    │
+│ Delhi     ┆ 12621        ┆ 6.2738e8    │
+│ Hyderabad ┆ 12605        ┆ 6.2575e8    │
+│ Chennai   ┆ 12432        ┆ 6.2365e8    │
+│ Mysuru    ┆ 12517        ┆ 6.2269e8    │
+│ Mangaluru ┆ 12389        ┆ 6.2234e8    │
+└───────────┴──────────────┴─────────────┘
