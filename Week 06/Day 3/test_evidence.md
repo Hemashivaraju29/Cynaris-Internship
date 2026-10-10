@@ -19,3 +19,7 @@
 
 ## Remaining Task
 - Colleague feedback and one improvement: Pending.
+## Validation Notes
+- Confirmed that the dashboard contains the five required chart types.
+- Exported dashboard image is included in this folder.
+- Colleague feedback and one improvement are still pending.
