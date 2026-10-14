@@ -1,4 +1,4 @@
-# PandasAI vs Manual Pandas ? Accuracy Report
+﻿# PandasAI vs Manual Pandas - Accuracy Report
 
 ## Dataset
 - Dataset: Nifty 500 combined EDA CSV
@@ -27,3 +27,4 @@ A completed query is not necessarily a correct query. Answers should be checked 
 
 ## Error Handling
 The Python script catches query exceptions, logs errors, and continues to the next question. Failed outputs are recorded in query_results.txt, and error details are recorded in pandasai_errors.log.
+
