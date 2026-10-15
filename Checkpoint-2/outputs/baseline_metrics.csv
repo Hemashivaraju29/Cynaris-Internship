@@ -1,0 +1,13 @@
+metric,value
+Transaction count,1000
+Unique customers in transactions,200
+Units sold,3098
+Gross sales,8456050
+Discount amount,434198.8
+Net sales before returns,8021851.2
+Realized sales after returns,7200464.2
+Transaction return rate,9.7
+Average transaction value before returns,8021.85
+Average realized transaction value,7200.46
+Data start date,2024-07-02
+Data end date,2026-06-28

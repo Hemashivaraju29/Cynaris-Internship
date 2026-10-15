@@ -1,4 +1,4 @@
-# Python virtual environment
+# Python virtual environments
 .venv-w5d1/
 .venv/
 venv/
@@ -11,5 +11,6 @@ venv/
 __pycache__/
 *.py[cod]
 
-# Logs
+# Log files
 *.log
+pandasai.log

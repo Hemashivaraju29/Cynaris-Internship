@@ -1,0 +1,15 @@
+HYPOTHESIS TESTING RESULTS
+==========================
+Test: Independent two-sample t-test
+Comparison: TCS vs Reliance daily returns
+
+H0: Mean daily returns of TCS and Reliance are equal.
+H1: Mean daily returns of TCS and Reliance are different.
+
+TCS mean daily return: 0.0873%
+Reliance mean daily return: 0.0937%
+T-statistic: -0.1321
+P-value: 0.894918
+Significance level: 0.05
+
+Conclusion: Fail to reject H0: There is not enough evidence of a statistically significant difference.
