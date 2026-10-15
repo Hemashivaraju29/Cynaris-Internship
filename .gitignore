@@ -1,5 +1,16 @@
+# Python virtual environments
 .venv-w5d1/
+.venv/
+venv/
+
+# Environment variables and secrets
 .env
+.env.*
+
+# Python cache files
 __pycache__/
-*.pyc
+*.py[cod]
+
+# Log files
+*.log
 pandasai.log
