@@ -1,0 +1,25 @@
+Date,Region,Category,Sales,Units Sold
+2026-01-05,North,Electronics,12500,25
+2026-01-12,South,Grocery,4200,70
+2026-01-18,East,Clothing,6800,34
+2026-02-03,West,Furniture,15200,12
+2026-02-11,North,Grocery,5100,85
+2026-02-19,South,Electronics,18400,28
+2026-03-02,East,Furniture,9800,8
+2026-03-14,West,Clothing,7600,38
+2026-03-21,North,Electronics,22100,31
+2026-04-04,South,Grocery,6300,90
+2026-04-13,East,Clothing,8200,41
+2026-04-25,West,Furniture,17300,14
+2026-05-06,North,Grocery,5900,92
+2026-05-15,South,Electronics,24500,35
+2026-05-22,East,Furniture,11200,9
+2026-06-08,West,Clothing,9100,45
+2026-06-17,North,Electronics,26800,39
+2026-06-24,South,Grocery,7100,105
+2026-07-03,East,Clothing,10400,52
+2026-07-16,West,Furniture,19600,16
+2026-08-02,North,Grocery,6700,100
+2026-08-11,South,Electronics,28700,42
+2026-09-05,East,Furniture,13400,11
+2026-09-19,West,Clothing,11500,57
