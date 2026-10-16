@@ -48,7 +48,11 @@ Open `http://127.0.0.1:8050/` in a browser.
 
 ## Verification
 
-The dashboard was launched locally, and its charts and filters were tested manually.
+Confirmed that the dashboard launches locally.
+
+Confirmed that dashboard.py passes Python syntax compilation.
+
+Region, category, and date filters can be tested in the browser.
 
 ## Note
 
