@@ -1,0 +1,22 @@
+[
+  {
+    "question": "How many sales records are there?",
+    "sql": "SELECT COUNT(*) AS total_sales FROM sales"
+  },
+  {
+    "question": "What is the total sales amount by city?",
+    "sql": "SELECT city, SUM(amount) AS total_amount FROM sales GROUP BY city ORDER BY total_amount DESC"
+  },
+  {
+    "question": "What are the top five products by total sales amount?",
+    "sql": "SELECT product, SUM(amount) AS total_amount FROM sales GROUP BY product ORDER BY total_amount DESC LIMIT 5"
+  },
+  {
+    "question": "What is the average sale amount by category?",
+    "sql": "SELECT category, AVG(amount) AS average_amount FROM sales GROUP BY category ORDER BY average_amount DESC"
+  },
+  {
+    "question": "How many sales records are there for each payment method?",
+    "sql": "SELECT payment_method, COUNT(*) AS transaction_count FROM sales GROUP BY payment_method ORDER BY transaction_count DESC"
+  }
+]

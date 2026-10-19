@@ -1,0 +1,8 @@
+<CodeBlock language="text" editable>
+fastapi
+uvicorn
+mysql-connector-python
+python-dotenv
+pydantic
+vanna
+</CodeBlock>
