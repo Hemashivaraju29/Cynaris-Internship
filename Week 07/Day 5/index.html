@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CIA Data Analyst Mode</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <main class="container">
+      <h1>CIA Data Analyst Mode</h1>
+      <p>Upload a CSV, ask a question, and explore your data.</p>
+
+      <section class="panel">
+        <h2>1. Upload CSV</h2>
+        <input type="file" id="csvFile" accept=".csv" />
+        <button id="uploadBtn">Upload CSV</button>
+        <p id="uploadStatus"></p>
+      </section>
+
+      <section class="panel">
+        <h2>2. Ask a question</h2>
+        <input
+          type="text"
+          id="question"
+          placeholder="Show a chart of sales by category"
+        />
+        <button id="analyzeBtn">Analyze</button>
+        <p id="answer"></p>
+      </section>
+
+      <section class="panel">
+        <h2>Chart</h2>
+        <canvas id="salesChart"></canvas>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
