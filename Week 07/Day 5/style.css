@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f6fb;
+  color: #1f2937;
+}
+
+.container {
+  max-width: 900px;
+  margin: 35px auto;
+  padding: 20px;
+}
+
+h1 {
+  color: #174ea6;
+}
+
+.panel {
+  background: white;
+  margin: 20px 0;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px #00000010;
+}
+
+input[type="text"],
+input[type="file"] {
+  display: block;
+  width: 100%;
+  margin: 12px 0;
+  padding: 12px;
+}
+
+button {
+  background: #1769e0;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0e4fac;
+}
+
+#answer,
+#uploadStatus {
+  overflow-wrap: anywhere;
+}
+
+canvas {
+  max-height: 400px;
+}
