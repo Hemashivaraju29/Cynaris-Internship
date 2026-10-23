@@ -2,13 +2,18 @@
 import io
 import uuid
 import json
+from pathlib import Path
 from typing import Any
 
 import pandas as pd
 from fastapi import FastAPI, File, HTTPException, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import FileResponse
 from pydantic import BaseModel, Field
 
+
+# Directory containing api.py, index.html, style.css, and script.js
+BASE_DIR = Path(__file__).resolve().parent
 
 app = FastAPI(
     title="CIA Data Analyst Mode",
@@ -45,16 +50,34 @@ class QueryRequest(BaseModel):
     question: str = Field(min_length=1, max_length=1000)
 
 
-@app.get("/")
-def root():
-    return {
-        "message": "CIA Data Analyst Mode API is running",
-        "docs": "/docs",
-    }
+# -------------------- Frontend routes --------------------
 
+@app.get("/", include_in_schema=False)
+def root():
+    """Serve the web application."""
+    return FileResponse(BASE_DIR / "index.html")
+
+
+@app.get("/style.css", include_in_schema=False)
+def stylesheet():
+    """Serve the application stylesheet."""
+    return FileResponse(BASE_DIR / "style.css", media_type="text/css")
+
+
+@app.get("/script.js", include_in_schema=False)
+def javascript():
+    """Serve the application JavaScript."""
+    return FileResponse(
+        BASE_DIR / "script.js",
+        media_type="application/javascript",
+    )
+
+
+# -------------------- API routes --------------------
 
 @app.get("/health")
 def health():
+    """Check whether the API is running."""
     return {"status": "ok"}
 
 
@@ -131,7 +154,10 @@ async def upload_csv(file: UploadFile = File(...)) -> dict[str, Any]:
     }
 
 
-def find_column(dataframe: pd.DataFrame, keywords: list[str]) -> str | None:
+def find_column(
+    dataframe: pd.DataFrame,
+    keywords: list[str],
+) -> str | None:
     """Find a column by matching its name against known keywords."""
 
     for column in dataframe.columns:
@@ -150,7 +176,9 @@ def numeric_column(dataframe: pd.DataFrame) -> str | None:
         ["sales", "revenue", "amount", "total", "profit"],
     )
 
-    if preferred is not None and pd.api.types.is_numeric_dtype(dataframe[preferred]):
+    if preferred is not None and pd.api.types.is_numeric_dtype(
+        dataframe[preferred]
+    ):
         return preferred
 
     numeric = dataframe.select_dtypes(include="number").columns.tolist()
@@ -235,7 +263,10 @@ def query_csv(request: QueryRequest) -> dict[str, Any]:
     )
 
     if value_column and (asks_average or asks_total):
-        series = pd.to_numeric(dataframe[value_column], errors="coerce").dropna()
+        series = pd.to_numeric(
+            dataframe[value_column],
+            errors="coerce",
+        ).dropna()
 
         if series.empty:
             raise HTTPException(
@@ -269,14 +300,23 @@ def query_csv(request: QueryRequest) -> dict[str, Any]:
         word in q for word in ["chart", "plot", "graph", "visual", "show"]
     )
     asks_grouping = any(
-        word in q for word in ["by category", "by region", "by product", "by company",
-                               "by department", "by city", "group"]
+        word in q
+        for word in [
+            "by category",
+            "by region",
+            "by product",
+            "by company",
+            "by department",
+            "by city",
+            "group",
+        ]
     )
 
     if value_column and group_column and (asks_chart or asks_grouping):
         working = dataframe[[group_column, value_column]].copy()
         working[value_column] = pd.to_numeric(
-            working[value_column], errors="coerce"
+            working[value_column],
+            errors="coerce",
         )
         working = working.dropna(subset=[group_column, value_column])
 
@@ -298,8 +338,16 @@ def query_csv(request: QueryRequest) -> dict[str, Any]:
         }
 
     # Basic row count query.
-    if any(term in q for term in ["how many rows", "row count", "number of rows",
-                                   "count records", "how many records"]):
+    if any(
+        term in q
+        for term in [
+            "how many rows",
+            "row count",
+            "number of rows",
+            "count records",
+            "how many records",
+        ]
+    ):
         return {
             "answer": int(len(dataframe)),
             "question": question,
