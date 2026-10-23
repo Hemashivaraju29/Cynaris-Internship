@@ -38,3 +38,20 @@ def test_reject_non_csv_file():
         files={"file": ("notes.txt", "hello", "text/plain")},
     )
     assert response.status_code == 400
+
+def test_homepage_loads():
+    response = client.get("/")
+    assert response.status_code == 200
+    assert "text/html" in response.headers["content-type"]
+
+
+def test_css_file_loads():
+    response = client.get("/style.css")
+    assert response.status_code == 200
+    assert "text/css" in response.headers["content-type"]
+
+
+def test_javascript_file_loads():
+    response = client.get("/script.js")
+    assert response.status_code == 200
+    assert "javascript" in response.headers["content-type"]
