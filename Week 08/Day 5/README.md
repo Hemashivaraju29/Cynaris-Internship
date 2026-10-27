@@ -118,7 +118,9 @@ After deploying, verify the following:
 
 ## 9. Demo Video
 
-**Demo link:** To be added after recording and uploading the demonstration.
+## Demo Video
+
+[Watch the 3-minute AI Data Platform demo](https://drive.google.com/file/d/1P_UHMufGnEKlfj_bPNB_KvpH_AGRwhX0/view?usp=sharing)
 
 The three-minute demo will show the application, CSV upload, analysis workflow, API documentation, and deployment verification.
 
