@@ -94,6 +94,20 @@ The tests cover application health, CSV uploads, query processing, invalid file 
 
 After deployment, verify the homepage, health endpoint, CSV upload, query functionality, and API documentation. Check the logs for server errors before considering the deployment complete.
 
+### Production Verification Checklist
+
+After deploying, verify the following:
+
+- [ ] The Render deployment completes successfully.
+- [ ] The homepage (`/`) loads without errors.
+- [ ] The health endpoint (`/health`) returns a successful response.
+- [ ] Swagger documentation (`/docs`) opens.
+- [ ] A valid CSV file uploads successfully.
+- [ ] Data queries return results without HTTP 500 errors.
+- [ ] Browser console and Render logs show no critical errors.
+- [ ] The public deployment URL is added to this README.
+- [ ] The demo video link is added after recording.
+
 ## 9. Demo Video
 
 **Demo link:** To be added after recording and uploading the demonstration.
