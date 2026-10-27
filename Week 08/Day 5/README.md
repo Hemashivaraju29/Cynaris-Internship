@@ -90,7 +90,15 @@ The tests cover application health, CSV uploads, query processing, invalid file 
 
 **Platform:** Render
 
-**Deployment URL:** Pending successful deployment.
+**Deployment URL:** https://cia-data-analyst-mode.onrender.com
+
+**Deployment status:** Successfully deployed on Render.
+
+**Verified endpoints:**
+
+- Homepage: https://cia-data-analyst-mode.onrender.com/
+- Health check: https://cia-data-analyst-mode.onrender.com/health
+- Swagger API documentation: https://cia-data-analyst-mode.onrender.com/docs
 
 After deployment, verify the homepage, health endpoint, CSV upload, query functionality, and API documentation. Check the logs for server errors before considering the deployment complete.
 
