@@ -1,16 +1,15 @@
-# Python virtual environments
+# W9D1 generated MLflow files
+Week 09/Day 1/output/
+mlruns/
+
+# Python environment and generated files
 .venv-w5d1/
-.venv/
-venv/
-
-# Environment variables and secrets
 .env
-.env.*
-
-# Python cache files
 __pycache__/
 *.py[cod]
-
-# Log files
-*.log
 pandasai.log
+
+# W9D1 MLflow generated files
+Week 09/Day 1/output/
+Week 09/Day 1/mlruns/
+mlruns/
