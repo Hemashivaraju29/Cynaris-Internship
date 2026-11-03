@@ -25,3 +25,6 @@ Week 09/Day 4/output/
 Pristyn-Care-Health/data/*.csv
 # Pristyn Care SQLite database
 Pristyn-Care-Health/outputs/*.db
+
+# W9D5 generated MLflow files
+Week 09/Day 5/output/
