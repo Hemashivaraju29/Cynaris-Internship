@@ -63,3 +63,31 @@ Python, Pandas, MLflow, SQLite, Pytest, Git, GitHub, VS Code, PowerShell.
 ## Conclusion
 
 Successfully implemented a tracked data analytics experiment pipeline. MLflow records experiment parameters, metrics, datasets, and artifacts, making the workflow reproducible and easier to compare.
+
+## How to Run the Pipeline
+
+1. Activate the project virtual environment.
+2. Install dependencies using:
+
+   `pip install -r requirements.txt`
+
+3. Run the pipeline:
+
+   `python experiment_pipeline.py`
+
+4. View the generated comparison report in the output folder.
+
+## Reproducibility
+
+- The pipeline uses a separate SQLite tracking database.
+- Each experiment receives a unique MLflow Run ID.
+- Dataset versions, parameters, metrics, and reports are logged as artifacts.
+- The comparison report helps evaluate the original and cleaned datasets.
+
+## Project Structure
+
+- `experiment_pipeline.py` – Main experiment pipeline.
+- `tests/` – Automated test cases.
+- `output/` – Generated reports and MLflow database.
+- `requirements.txt` – Required Python packages.
+- `README.md` – Project documentation.
