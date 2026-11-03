@@ -1,0 +1,12 @@
+# Python generated files
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.ipynb_checkpoints/
+
+# Local healthcare and sales datasets
+data/*.csv
+
+# Generated database files
+outputs/*.db
