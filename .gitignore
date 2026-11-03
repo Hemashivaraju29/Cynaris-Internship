@@ -22,3 +22,6 @@ Week 09/Day 3/output/
 
 # W9D4 generated output
 Week 09/Day 4/output/
+Pristyn-Care-Health/data/*.csv
+# Pristyn Care SQLite database
+Pristyn-Care-Health/outputs/*.db
