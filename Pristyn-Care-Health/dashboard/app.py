@@ -308,3 +308,10 @@ st.caption(
     "Pristyn Care Health Analytics | Dashboard v1 | "
     "Developed using Python, Pandas, Streamlit and Plotly"
 )
+st.info(
+    "Data note: Appointment analysis relates to the available healthcare "
+    "appointment dataset. Patient satisfaction results come from a separate "
+    "Sunrise dataset and should not be interpreted as Pristyn Care results. "
+    "Resource utilisation data is subject to the validation limitations "
+    "described below."
+)
