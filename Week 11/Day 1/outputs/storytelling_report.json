@@ -1,0 +1,107 @@
+{
+    "business_summary": {
+        "total_sales": 308400.0,
+        "total_units": 1079,
+        "total_transactions": 24,
+        "average_transaction_value": 12850.0,
+        "top_region": "South",
+        "top_region_sales": 89200.0,
+        "lowest_region": "East",
+        "top_category": "Electronics",
+        "top_category_sales": 133000.0,
+        "highest_month": "June 2026",
+        "highest_month_sales": 43000.0,
+        "lowest_month": "January 2026",
+        "lowest_month_sales": 23500.0
+    },
+    "regional_performance": [
+        {
+            "Region": "South",
+            "Total_Sales": 89200,
+            "Units_Sold": 370,
+            "Transactions": 6
+        },
+        {
+            "Region": "West",
+            "Total_Sales": 80300,
+            "Units_Sold": 182,
+            "Transactions": 6
+        },
+        {
+            "Region": "North",
+            "Total_Sales": 79100,
+            "Units_Sold": 372,
+            "Transactions": 6
+        },
+        {
+            "Region": "East",
+            "Total_Sales": 59800,
+            "Units_Sold": 155,
+            "Transactions": 6
+        }
+    ],
+    "category_performance": [
+        {
+            "Category": "Electronics",
+            "Total_Sales": 133000,
+            "Units_Sold": 200,
+            "Transactions": 6
+        },
+        {
+            "Category": "Furniture",
+            "Total_Sales": 86500,
+            "Units_Sold": 70,
+            "Transactions": 6
+        },
+        {
+            "Category": "Clothing",
+            "Total_Sales": 53600,
+            "Units_Sold": 267,
+            "Transactions": 6
+        },
+        {
+            "Category": "Grocery",
+            "Total_Sales": 35300,
+            "Units_Sold": 542,
+            "Transactions": 6
+        }
+    ],
+    "monthly_performance": [
+        {
+            "Date": "2026-01-01",
+            "Total_Sales": 23500
+        },
+        {
+            "Date": "2026-02-01",
+            "Total_Sales": 38700
+        },
+        {
+            "Date": "2026-03-01",
+            "Total_Sales": 39500
+        },
+        {
+            "Date": "2026-04-01",
+            "Total_Sales": 31800
+        },
+        {
+            "Date": "2026-05-01",
+            "Total_Sales": 41600
+        },
+        {
+            "Date": "2026-06-01",
+            "Total_Sales": 43000
+        },
+        {
+            "Date": "2026-07-01",
+            "Total_Sales": 30000
+        },
+        {
+            "Date": "2026-08-01",
+            "Total_Sales": 35400
+        },
+        {
+            "Date": "2026-09-01",
+            "Total_Sales": 24900
+        }
+    ]
+}
