@@ -1,0 +1,11 @@
+Risk ID,Component,Identified Risk,Severity,Potential Impact,Recommended Mitigation
+R01,Data Processing,Large datasets may increase memory usage,Medium,Slow processing and application failure,Use batch processing and scalable data storage
+R02,AI Integration,Groq API timeout or service outage,High,Executive summary generation may fail,Implement timeout retry and fallback handling
+R03,API Security,Unauthorized access to API credentials,High,API misuse and unexpected costs,Use secure secret management and credential rotation
+R04,Data Validation,Missing or corrupted CSV input,Medium,Incorrect results or pipeline failure,Implement comprehensive input validation
+R05,Monitoring,No centralized execution monitoring,Medium,Delayed identification of application failures,Implement structured logging and alerting
+R06,Storage,Local files may be lost or overwritten,High,Loss of reports and analysis outputs,Use secure centralized storage and regular backups
+R07,Deployment,No visible automated deployment pipeline,Medium,Manual deployment errors and inconsistent environments,Introduce CI/CD and separate environments
+R08,Testing,Limited failure and integration test coverage,Medium,Unexpected errors in production,Expand automated testing and integration tests
+R09,Data Privacy,Sensitive data may be shared with an external AI provider,High,Potential exposure of confidential information,Apply data minimization and approved provider security controls
+R10,Report Generation,Report creation may fail due to missing inputs or file errors,Medium,Incomplete stakeholder reports,Validate dependencies and handle file-writing exceptions
