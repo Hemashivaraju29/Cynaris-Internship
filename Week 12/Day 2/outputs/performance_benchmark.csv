@@ -1,0 +1,4 @@
+query,duckdb_avg_ms,pandas_avg_ms,speedup_ratio_pandas_over_duckdb,faster_engine
+revenue_by_city,7.559,6.571,0.87,Pandas
+revenue_by_category,7.505,6.635,0.88,Pandas
+payment_performance,7.76,10.454,1.35,DuckDB
