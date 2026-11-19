@@ -1,5 +1,7 @@
 import asyncio
 from typing import Any
+import os
+from dotenv import load_dotenv
 
 from fastapi import FastAPI
 from pydantic import BaseModel
@@ -18,10 +20,16 @@ from vanna.tools import RunSqlTool
 # CONFIGURATION
 # ============================================================
 
-MYSQL_HOST = "localhost"
-MYSQL_PORT = 3307
-MYSQL_DATABASE = "sales_db"
-MYSQL_USER = "root"
+load_dotenv()
+
+MYSQL_HOST = os.getenv("VANNA_MYSQL_HOST", "127.0.0.1")
+MYSQL_PORT = int(os.getenv("VANNA_MYSQL_PORT", "3307"))
+MYSQL_DATABASE = os.getenv("VANNA_MYSQL_DATABASE", "sales_db")
+MYSQL_USER = os.getenv("VANNA_MYSQL_USER", "vanna_analyst")
+MYSQL_PASSWORD = os.getenv("VANNA_MYSQL_PASSWORD")
+
+if not MYSQL_PASSWORD:
+    raise RuntimeError("VANNA_MYSQL_PASSWORD is not configured")
 
 OLLAMA_HOST = "http://localhost:11434"
 OLLAMA_MODEL = "llama3.2:3b"
@@ -36,7 +44,7 @@ sql_runner = MySQLRunner(
     port=MYSQL_PORT,
     database=MYSQL_DATABASE,
     user=MYSQL_USER,
-    password="Chinnu@29",
+    password=MYSQL_PASSWORD,
 )
 
 

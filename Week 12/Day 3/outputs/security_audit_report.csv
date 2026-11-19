@@ -1,0 +1,13 @@
+check_id,category,check,status,severity,details,recommendation
+DATA-001,Data integrity,Dataset metadata and checksum,PASS,INFO,"Dataset loaded; rows=100000, columns=8, SHA-256=b7781132c5d7d70bed4833823ee3b84213f5bfe6b3efc47084a646a325750a5b",Recalculate and compare the checksum when validating a dataset copy.
+CLASS-001,Data classification,Column classification: sale_id,PASS,LOW,General business data,Apply the platform's normal data controls.
+CLASS-002,Data classification,Column classification: customer_id,REVIEW_REQUIRED,MEDIUM,Pseudonymous or indirect identifier,Restrict access and assess whether this identifier can be linked to an individual.
+CLASS-003,Data classification,Column classification: product,PASS,LOW,General business data,Apply the platform's normal data controls.
+CLASS-004,Data classification,Column classification: category,PASS,LOW,General business data,Apply the platform's normal data controls.
+CLASS-005,Data classification,Column classification: quantity,PASS,LOW,General business data,Apply the platform's normal data controls.
+CLASS-006,Data classification,Column classification: amount,PASS,LOW,General business data,Apply the platform's normal data controls.
+CLASS-007,Data classification,Column classification: city,PASS,LOW,General business data,Apply the platform's normal data controls.
+CLASS-008,Data classification,Column classification: payment_method,PASS,LOW,General business data,Apply the platform's normal data controls.
+PII-000,Sensitive data exposure,"Email, Aadhaar-like and PAN-like pattern scan",PASS,LOW,No matching patterns found in the scanned dataset fields.,Repeat the scan when new data is introduced.
+SECRET-000,Credential security,Repository secret-pattern scan,PASS,LOW,No supported secret patterns detected in eligible text files.,Use secret scanning in version control and rotate any exposed keys.
+MANUAL-001,Platform controls,"Access, encryption, MFA, logging, backup and retention review",REVIEW_REQUIRED,MEDIUM,These controls cannot be verified from a local CSV and repository scan.,"Inspect database permissions, least-privilege roles, encryption settings, MFA, audit logs, backup protection and retention policies with the platform administrator."
