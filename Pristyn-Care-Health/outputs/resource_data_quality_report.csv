@@ -1,0 +1,6 @@
+validation_check,affected_records,percentage_of_records
+Occupied beds exceed total beds,175,43.75
+ICU occupied beds exceed ICU total,175,43.75
+Completed surgeries exceed scheduled,182,45.5
+Zero scheduled surgeries,33,8.25
+Records with at least one validation issue,337,84.25

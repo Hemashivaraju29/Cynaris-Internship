@@ -84,7 +84,7 @@ OUTPUT_DIR = BASE_DIR / "outputs"
 st.title("🏥 Pristyn Care Health Analytics Dashboard")
 
 st.caption(
-    "Dashboard v1 | Appointment, Patient Satisfaction "
+    "Final Dashboard | Appointment Analytics, Patient Satisfaction "
     "and Data Quality"
 )
 
@@ -534,7 +534,10 @@ st.divider()
 # 3. PATIENT SATISFACTION ANALYSIS
 # --------------------------------------------------
 
-st.header("3. Patient Satisfaction Analysis")
+st.header(
+    "3. Patient Satisfaction Analysis "
+    "(Supplementary Sunrise Dataset)"
+)
 
 satisfaction = data["satisfaction"].copy()
 
@@ -634,9 +637,19 @@ c1.metric(
     f"{overall_score:.2f} / 5"
 )
 
+waiting_data = pd.read_csv(
+    Path(__file__).resolve().parents[1]
+    / "data"
+    / "sunrise_patient_satisfaction.csv"
+)
+
+average_waiting_time = waiting_data[
+    "waiting_time_mins"
+].mean()
+
 c2.metric(
     "Average Waiting Time",
-    "91.43 minutes"
+    f"{average_waiting_time:.2f} minutes"
 )
 
 
@@ -742,7 +755,7 @@ st.divider()
 # --------------------------------------------------
 
 st.header(
-    "4. Resource Utilisation Data Quality"
+    "4. Resource Utilisation Analysis & Data Quality"
 )
 
 quality = data["resource_quality"].copy()
@@ -774,10 +787,18 @@ else:
 
     c1, c2, c3 = st.columns(3)
 
+    resource_data = pd.read_csv(
+    Path(__file__).resolve().parents[1]
+    / "data"
+    / "sunrise_resource_utilisation.csv"
+)
+
+    total_records = len(resource_data)
+
     c1.metric(
-        "Total Resource Records",
-        "400"
-    )
+    "Total Resource Records",
+    f"{total_records:,}"
+)
 
     c2.metric(
         "Records with Issues",
@@ -866,7 +887,7 @@ st.divider()
 # --------------------------------------------------
 
 st.caption(
-    "Pristyn Care Health Analytics | Dashboard v1 | "
+    "Pristyn Care Health Analytics | Final Dashboard | "
     "Developed using Python, Pandas, Streamlit and Plotly"
 )
 

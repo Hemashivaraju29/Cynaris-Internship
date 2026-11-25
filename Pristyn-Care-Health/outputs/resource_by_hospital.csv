@@ -1,0 +1,5 @@
+hospital,bed_occupancy_pct,icu_occupancy_pct,surgery_completion_pct,doctor_attendance_pct,nurse_attendance_pct,avg_wait_mins,total_readmissions
+Sunrise East,116.54,125.63,161.19087871835126,85.61,88.71,79.84,396
+Sunrise Main Campus,143.66,120.9,148.29176550826037,84.86,87.15,76.55,396
+Sunrise North,136.86,120.26,152.55643977234885,85.08,86.28,77.11,387
+Sunrise South,121.86,117.03,144.55606969343233,84.3,87.56,81.26,413

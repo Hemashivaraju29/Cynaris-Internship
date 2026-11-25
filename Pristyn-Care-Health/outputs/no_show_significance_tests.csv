@@ -1,0 +1,6 @@
+factor,chi_square,degrees_of_freedom,p_value,significant_at_0.05
+department,2.1338,3,0.5451,No
+specialty,32.6104,7,3.1e-05,Yes
+patient_age_group,7.449,4,0.113981,No
+insurance_type,1.1832,3,0.757036,No
+booking_hour,7.2776,10,0.699008,No

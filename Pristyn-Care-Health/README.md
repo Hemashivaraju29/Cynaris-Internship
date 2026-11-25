@@ -31,15 +31,17 @@ Three datasets were used for analysis.
 | Resource Utilisation    |       400 |      14 |
 | **Total**               | **3,000** |         |
 
+**Important:** The healthcare appointments dataset is analysed separately from the two supplementary Sunrise datasets. Patient satisfaction and resource utilisation findings must not be interpreted as Pristyn Care results.
+
 ### Healthcare Appointments
 
 Contains appointment dates, departments, specialties, waiting times, consultation duration, insurance types, and no-show information.
 
-### Patient Satisfaction
+### Patient Satisfaction (Supplementary Sunrise Dataset)
 
 Contains doctor, nurse, cleanliness, billing, and overall satisfaction ratings, along with waiting times and recommendation responses.
 
-### Resource Utilisation
+### Resource Utilisation (Supplementary Sunrise Dataset)
 
 Contains bed occupancy, ICU capacity, scheduled and completed surgeries, staff attendance, waiting times, and readmission counts.
 

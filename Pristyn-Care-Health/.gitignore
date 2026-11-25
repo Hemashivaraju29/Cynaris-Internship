@@ -10,3 +10,5 @@ data/*.csv
 
 # Generated database files
 outputs/*.db
+
+dashboard/app_backup_v1.py
