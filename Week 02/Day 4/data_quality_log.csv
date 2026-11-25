@@ -1,0 +1,8 @@
+issue,cleaning_action,reason
+Missing values,Checked using isnull().sum(),To quantify data completeness
+Amount missing values,Imputed using mean,Mean preserves the overall average for numeric data
+Quantity missing values,Imputed using median,Median is less affected by extreme values
+Category missing values,Imputed using mode,Mode is suitable for categorical data
+Payment method missing values,Applied forward-fill,Forward-fill uses the previous available value
+Outliers in amount,Detected using IQR and capped,Capping reduces the influence of extreme values
+Inconsistent string values,Removed whitespace and standardised casing/known variations,Creates consistent categorical values for analysis

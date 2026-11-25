@@ -1,0 +1,14 @@
+{
+    "dataset": "Week 05\\Day 4\\data_100k.csv",
+    "rows_scanned": 100000,
+    "columns_scanned": 8,
+    "dataset_sha256": "b7781132c5d7d70bed4833823ee3b84213f5bfe6b3efc47084a646a325750a5b",
+    "total_checks": 12,
+    "status_counts": {
+        "PASS": 10,
+        "FAIL": 0,
+        "REVIEW_REQUIRED": 2
+    },
+    "report_file": "security_audit_report.csv",
+    "note": "This is a local, pattern-based audit. A PASS does not prove the absence of all sensitive data or security vulnerabilities. Manual platform-control verification is required."
+}

@@ -1,0 +1,11 @@
+Metric,Value
+Original rows,541909
+Cleaned rows,524878
+Total revenue,10642110.8
+Unique invoices,19960
+Unique products,3922
+Unique countries,38
+Unique customers,4338
+T-statistic,-30.053
+P-value,0.0
+Test conclusion,Statistically significant difference in average revenue.

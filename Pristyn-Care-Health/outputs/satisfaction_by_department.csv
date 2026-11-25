@@ -1,0 +1,10 @@
+department,doctor_rating,nurse_rating,cleanliness_rating,billing_clarity_rating,overall_satisfaction
+Cardiology,2.96,2.97,3.08,3.08,2.99
+Emergency,3.0,3.13,2.8,2.8,2.85
+IPD,2.9,2.99,2.99,3.16,2.91
+Lab,3.18,2.65,2.96,2.86,2.96
+OPD,2.97,2.88,3.37,2.74,3.08
+Orthopaedics,2.77,3.07,2.86,2.87,3.04
+Pharmacy,2.88,3.17,3.08,3.06,3.12
+Radiology,2.73,2.81,3.25,3.03,3.14
+Surgery,2.97,2.93,2.97,2.69,3.27

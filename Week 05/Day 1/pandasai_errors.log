@@ -1,0 +1,46 @@
+2026-09-30 15:55:10,861 | ERROR | PandasAI query failed: What is the average population?
+Traceback (most recent call last):
+  File "C:\Users\hemas\OneDrive\Pictures\Documents\Cynaris-Internship\Week 05\Day 1\pandasai_error_handling.py", line 64, in <module>
+    result = df.chat(question)
+             ^^^^^^^^^^^^^^^^^
+  File "C:\Users\hemas\OneDrive\Pictures\Documents\Cynaris-Internship\.venv-w5d1\Lib\site-packages\pandasai\dataframe\base.py", line 118, in chat
+    return self._agent.chat(prompt)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hemas\OneDrive\Pictures\Documents\Cynaris-Internship\.venv-w5d1\Lib\site-packages\pandasai\agent\base.py", line 103, in chat
+    return self._process_query(query, output_type)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hemas\OneDrive\Pictures\Documents\Cynaris-Internship\.venv-w5d1\Lib\site-packages\pandasai\agent\base.py", line 287, in _process_query
+    result = self.execute_with_retries(code)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hemas\OneDrive\Pictures\Documents\Cynaris-Internship\.venv-w5d1\Lib\site-packages\pandasai\agent\base.py", line 204, in execute_with_retries
+    result = self.execute_code(code)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hemas\OneDrive\Pictures\Documents\Cynaris-Internship\.venv-w5d1\Lib\site-packages\pandasai\agent\base.py", line 135, in execute_code
+    return code_executor.execute_and_return_result(code)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hemas\OneDrive\Pictures\Documents\Cynaris-Internship\.venv-w5d1\Lib\site-packages\pandasai\core\code_execution\code_executor.py", line 42, in execute_and_return_result
+    raise NoResultFoundError(
+pandasai.exceptions.NoResultFoundError: No result was returned from the code execution. Please return the result in dictionary format, for example: result = {'type': ..., 'value': ...}
+2026-09-30 16:02:15,213 | ERROR | PandasAI query failed: What is the total population?
+Traceback (most recent call last):
+  File "C:\Users\hemas\OneDrive\Pictures\Documents\Cynaris-Internship\Week 05\Day 1\pandasai_error_handling.py", line 64, in <module>
+    result = df.chat(question)
+             ^^^^^^^^^^^^^^^^^
+  File "C:\Users\hemas\OneDrive\Pictures\Documents\Cynaris-Internship\.venv-w5d1\Lib\site-packages\pandasai\dataframe\base.py", line 118, in chat
+    return self._agent.chat(prompt)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hemas\OneDrive\Pictures\Documents\Cynaris-Internship\.venv-w5d1\Lib\site-packages\pandasai\agent\base.py", line 103, in chat
+    return self._process_query(query, output_type)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hemas\OneDrive\Pictures\Documents\Cynaris-Internship\.venv-w5d1\Lib\site-packages\pandasai\agent\base.py", line 287, in _process_query
+    result = self.execute_with_retries(code)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hemas\OneDrive\Pictures\Documents\Cynaris-Internship\.venv-w5d1\Lib\site-packages\pandasai\agent\base.py", line 204, in execute_with_retries
+    result = self.execute_code(code)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hemas\OneDrive\Pictures\Documents\Cynaris-Internship\.venv-w5d1\Lib\site-packages\pandasai\agent\base.py", line 135, in execute_code
+    return code_executor.execute_and_return_result(code)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hemas\OneDrive\Pictures\Documents\Cynaris-Internship\.venv-w5d1\Lib\site-packages\pandasai\core\code_execution\code_executor.py", line 42, in execute_and_return_result
+    raise NoResultFoundError(
+pandasai.exceptions.NoResultFoundError: No result was returned from the code execution. Please return the result in dictionary format, for example: result = {'type': ..., 'value': ...}

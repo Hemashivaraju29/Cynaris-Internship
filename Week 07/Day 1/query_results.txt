@@ -1,0 +1,21 @@
+Query 1: How many rows are in this dataset?
+PandasAI answer: 1
+
+Query 2: How many unique companies are in the dataset?
+PandasAI answer: 3
+
+Query 3: What is the average closing price?
+PandasAI answer: 1097.297776694359
+
+Query 4: What is the highest closing price?
+PandasAI answer: Unfortunately, I was not able to get your answer. Please try again.
+
+Query 5: What is the lowest closing price?
+ERROR: InvalidOutputValueMismatch: Result must be in the format of dictionary of type and value like `result = {"type": ..., "value": ... }`
+
+Query 6: What is the total trading volume?
+ERROR: InvalidOutputValueMismatch: Result must be in the format of dictionary of type and value like `result = {"type": ..., "value": ... }`
+
+Query 7: Which company has the most records?
+PandasAI answer: Unfortunately, I was not able to get your answer. Please try again.
+

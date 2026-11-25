@@ -1,0 +1,30 @@
+# W9D1 generated MLflow files
+Week 09/Day 1/output/
+mlruns/
+
+# Python environment and generated files
+.venv-w5d1/
+.env
+__pycache__/
+*.py[cod]
+pandasai.log
+
+# W9D1 MLflow generated files
+Week 09/Day 1/output/
+Week 09/Day 1/mlruns/
+mlruns/
+
+# W9D2 generated MLflow files
+Week 09/Day 2/output/
+
+# W9D3 generated MLflow files
+Week 09/Day 3/output/
+
+# W9D4 generated output
+Week 09/Day 4/output/
+Pristyn-Care-Health/data/*.csv
+# Pristyn Care SQLite database
+Pristyn-Care-Health/outputs/*.db
+
+# W9D5 generated MLflow files
+Week 09/Day 5/output/

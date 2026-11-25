@@ -1,0 +1,11 @@
+Question,Manual_Pandas,PandasAI,Status
+How many rows are in this dataset?,7395,1,Incorrect
+How many unique companies are in the dataset?,3,3,Correct
+What is the average closing price?,1096.7013073429214,1097.297776694359 (used Open),Incorrect
+What is the highest closing price?,3954.550048828125,3954.550048828125 (answer response failed),Value correct; response failed
+What is the lowest closing price?,213.4250030517578,213.425003 (invalid output format),Value correct; output failed
+What is the total trading volume?,42833603649,42833603649 (invalid output format),Value correct; output failed
+Which company has the most records?,"{'Reliance': 2465, 'TCS': 2465, 'HDFC Bank': 2465}",Conflicting rankings,Incorrect
+What is the average closing price for each company?,"{'HDFC Bank': 774.368, 'Reliance': 926.7343, 'TCS': 1589.0016}",Not verified,Manual result verified; PandasAI result not verified
+Which date has the highest trading volume?,"{'date': '2017-02-17', 'total_volume': 210705356}",Not verified,Manual result verified; PandasAI result not verified
+Are there any missing values in each column?,"{'Date': 0, 'Open': 0, 'High': 0, 'Low': 0, 'Close': 0, 'Adj Close': 0, 'Volume': 0, 'Company': 0}",Not verified,Manual result verified; PandasAI result not verified
